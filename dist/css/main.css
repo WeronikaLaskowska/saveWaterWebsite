@@ -51,8 +51,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #C9D7F2;
+  font-family: "Poppins", sans-serif;
+  background-color: #c9d7f2;
   min-height: 1500px; }
 
 html {
@@ -62,6 +62,9 @@ html {
   display: flex;
   justify-content: center; }
 
+.desk {
+  display: none; }
+
 .header {
   display: flex;
   width: 100%;
@@ -69,20 +72,20 @@ html {
   padding: 20px 2rem;
   position: fixed;
   top: 0px;
-  background-color: #6482BD;
+  background-color: #6482bd;
   opacity: 0.7; }
   .header a {
     text-decoration: none;
     color: white;
     justify-self: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     padding: 0 1rem;
     justify-self: flex-start; }
     .header a::after {
       display: block;
-      content: '';
-      border-bottom: solid 3px #3B4D70;
+      content: "";
+      border-bottom: solid 3px #3b4d70;
       transform: scaleX(0);
       transition: transform 0.5s ease-in-out; }
     .header a:hover::after {
@@ -98,21 +101,21 @@ html {
   align-items: center;
   pointer-events: none; }
   #home::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #C9D7F2, transparent);
+    background: linear-gradient(to top, #c9d7f2, transparent);
     z-index: 1000; }
   #home::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #C9D7F2;
+    background: #c9d7f2;
     opacity: 0.6;
     z-index: 1000;
     mix-blend-mode: color; }
@@ -136,7 +139,7 @@ html {
     z-index: 2; }
 
 #info {
-  background: #3B4D70;
+  background: #3b4d70;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,7 +149,7 @@ html {
   font-weight: 400; }
 
 #info2 {
-  background: #3B4D70;
+  background: #3b4d70;
   text-align: center;
   color: white;
   font-size: 1.4rem;
@@ -167,7 +170,7 @@ html {
   background: transparent; }
 
 #colors {
-  background: #3B4D70;
+  background: #3b4d70;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -199,7 +202,7 @@ html {
     padding-bottom: 10px;
     font-size: 1.5rem; }
     #colors #green::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 3px;
@@ -213,7 +216,7 @@ html {
     padding-bottom: 10px;
     font-size: 1.5rem; }
     #colors #grey::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 3px;
@@ -227,7 +230,7 @@ html {
     padding-bottom: 10px;
     font-size: 1.5rem; }
     #colors #blue::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 3px;
@@ -236,7 +239,7 @@ html {
       left: 0; }
   #colors p {
     padding: 1.3rem 1.5rem;
-    color: #C9D7F2;
+    color: #c9d7f2;
     font-size: 1.1rem; }
 
 #tips {
@@ -271,10 +274,10 @@ html {
       padding: 1rem 0;
       font-size: 2rem; }
     #tips2 .element p {
-      color: #3B4D70;
+      color: #3b4d70;
       font-size: 1.3rem; }
   #tips2 i {
-    color: #3B4D70;
+    color: #3b4d70;
     border-radius: 50%;
     background-color: #fff;
     padding: 2rem;
@@ -283,7 +286,7 @@ html {
     #tips2 i:hover {
       padding: 3rem;
       font-size: 5rem;
-      background-color: #3B4D70;
+      background-color: #3b4d70;
       color: #fff; }
   #tips2 .drop {
     padding-left: 2.5rem;
@@ -293,7 +296,7 @@ html {
       padding-right: 3.5rem; }
 
 .footer {
-  background-color: #3B4D70;
+  background-color: #3b4d70;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -304,7 +307,7 @@ html {
     padding: 0.8rem;
     color: #fff; }
     .footer i:hover {
-      color: #C9D7F2; }
+      color: #c9d7f2; }
 
 @media screen and (min-width: 620px) {
   .header {
@@ -377,6 +380,10 @@ html {
 @media screen and (min-width: 1200px) {
   .liquid h2 {
     font-size: 10vw; }
+  .desk {
+    display: block; }
+  .mob {
+    display: none; }
   #info {
     font-size: 2rem; }
   #info2 p {
@@ -389,8 +396,13 @@ html {
   #info2 .footprint-image2 {
     height: 80vh; }
   .gridthis {
-    display: grid;
-    grid-template-columns: 1fr 3fr; }
+    display: flex; }
+    .gridthis p {
+      color: #3b4d70;
+      opacity: 0.5;
+      margin-top: -60px;
+      align-self: flex-start;
+      text-align: left; }
   .size {
     font-size: 3rem; }
   #tips {

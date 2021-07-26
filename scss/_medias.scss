@@ -111,6 +111,12 @@
       font-size: 10vw;
    }
   }
+  .desk{
+    display: block;
+  }
+  .mob{
+    display: none;
+  }
   #info {
     font-size: 2rem;
   }
@@ -131,8 +137,14 @@
 
   }
   .gridthis{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    p{
+      color:#3b4d70;
+      opacity: 0.5;
+      margin-top:-60px;
+      align-self: flex-start;
+      text-align: left;
+    }
   }
   .size{
     font-size: 3rem;
