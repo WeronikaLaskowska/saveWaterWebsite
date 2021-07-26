@@ -1,0 +1,43 @@
+@keyframes animation {
+  0%, 100% {
+    clip-path: polygon(0% 46%, 16% 45%, 32% 55%, 53% 62%, 71% 66%, 88% 65%, 100% 53%, 100% 100%, 0% 100%); }
+  50% {
+    clip-path: polygon(3% 57%, 22% 58%, 42% 58%, 62% 54%, 81% 46%, 94% 38%, 100% 38%, 100% 99%, 0% 99%); } }
+
+.liquid {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .liquid h2 {
+    position: absolute;
+    font-size: 26vw; }
+  .liquid h2:nth-child(1) {
+    color: #fff;
+    text-shadow: -2px 2px 0px #6482BD, -2px 2px 0px #6482BD, -3px 3px 0px #6482BD, -4px 4px 0px #6482BD, -8px 8px 10px rgba(0, 0, 0, 0.5), -8px 8px 20px rgba(0, 0, 0, 0.5); }
+  .liquid h2:nth-child(2) {
+    color: #C9D7F2;
+    animation: animation 3s ease-in-out infinite; }
+  .liquid h2:nth-child(3) {
+    color: #C9D7F2;
+    opacity: 0.5;
+    animation: animation 8s ease-in-out infinite; }
+  .liquid h2:nth-child(4) {
+    color: #C9D7F2;
+    animation: animation 4s ease-in-out infinite; }
+
+#orange {
+  background-color: #febd01;
+  font-size: 1.4rem; }
+
+#darkblue {
+  background-color: #01153a;
+  font-size: 1.4rem; }
+
+.quote-this::before {
+  content: open-quote; }
+
+.quote-this::after {
+  content: close-quote; }

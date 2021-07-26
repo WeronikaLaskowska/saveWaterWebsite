@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,800;0,900;1,400;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Save Water</title>
+</head>
+<body>
+    <div class="container">
+    <div class="header top">
+        <a href="#home">Home</a>
+        <a href="#info">Info</a>
+        <a href="#tips">Tips</a>
+    </div>
+ </div>
+    <section id="home">
+        <img src="./img/mountains.png" id="mountains" alt="">
+        <img src="./img/water2.png" id="water" alt="">
+        <h2 class="text">Water</h2>
+    </section>
+    <script type="text/javascript">
+        let mnt = document.getElementById('mountains');
+        let water = document.getElementById('water');
+        let txt = document.querySelector('.text');
+        window.addEventListener('scroll', function(){
+            let value =window.scrollY;
+            mnt.style.top = -value * 0.15 + 'px';
+            water.style.top = value * 0.15 + 'px';
+            txt.style.bottom = -value * 1 + 'px';
+        })
+    </script>
+    <section id="info">
+    <div class="title">
+        <h2>What is a</h2>
+        <div class="liquid">
+            <h2>Water</h2>
+           <h2>Water</h2>
+            <h2>Water</h2>
+            <h2>Water</h2>
+        </div>
+        <h2>footprint?</h2>
+    </div>
+    </section>
+    <section id="info2">
+    <div class="gridthis">
+        <p class="quote"><span class="quote-this"> Everything we use, wear, buy, sell and eat takes water to make.</span></p>
+        <div class="footprint-image"></div>
+    </div>
+        <p id="orange">The water footprint measures the amount of water used to produce each of the goods and services we use. It can be measured for a single process, such as growing rice, for a product, such as a pair of jeans, for the fuel we put in our car, or for an entire multi-national company.</p>
+        <div class="footprint-image2"></div>
+        <p id="darkblue">The water footprint can also tell us how much water is being consumed by a particular country – or globally – in a specific river basin or from an aquifer.</p>
+        <h2 class="pad size">The</h2>
+        <div class="liquid">
+        <h2> Three  </h2>
+        <h2> Three  </h2>
+        <h2> Three  </h2>
+        <h2> Three  </h2>
+         </div>
+         <h2 class="size">Colors</h2>
+         <p>A water footprint is measured in terms of the volume of water consumed, evaporated and polluted. The Water Footprint Network, whose research provides the data that drive GRACE’s calculator, splits water footprints into three corresponding categories:</p>
+    </section>
+    <section id="colors">
+        <div class="green"></div>
+        <div class="text-section">
+        <h1 id="green">Green water footprint</h1>
+        <p>
+           is water from precipitation that is stored in the root zone of the soil and evaporated, transpired or incorporated by plants. It is particularly relevant for agricultural, horticultural and forestry products.</p>
+        </div>
+        <div class="grey"></div>
+        <div class="text-section">
+        <h1 id="grey">Grey water footprint</h1>
+        <p>
+            is the amount of fresh water required to assimilate pollutants to meet specific water quality standards. The grey water footprint considers point-source pollution discharged to a freshwater resource directly through a pipe.</p>
+        </div>
+        <div class="blue"></div>
+        <div class="text-section">
+        <h1 id="blue">Blue water footprint</h1>
+        <p>
+            is water that has been sourced from surface or groundwater resources and is either evaporated, incorporated into a product or taken from one body of water and returned to another, or returned at a different time. Irrigated agriculture, industry and domestic water use can each have a blue water footprint.</p>
+        </div>
+    </section>
+    <section id="tips">
+        <h2 class="other">Learn how to</h2>
+        <div class="liquid">
+            <h2>Save</h2>
+            <h2>Save</h2>
+            <h2>Save</h2>
+            <h2>Save</h2>
+        </div>
+        <h2 class="other">Water</h2>
+        <div class="tips-image"></div>
+    </section>
+    <section id="tips2">
+        <div class="element">
+        <i class="fas fa-pizza-slice fa-4x"></i>
+        <h3>Change Your Diet</h3>
+        <p>It takes a lot of water to grow, process and transport food. To save water, eat lower on the food chain, eat more whole foods and don’t waste food.</p>
+    </div>
+        <div class="element">
+        <i class="fas fa-shower fa-4x"></i>
+        <h3>Cut Indoor Water Use</h3>
+        <p>There are many ways to cut back on water use throughout your house from your kitchen and bathroom to your laundry room, and even by fixing leaks.</p>
+    </div>
+        <div class="element">
+        <i class="fas fa-tint fa-4x drop"></i>
+        <h3>Use Less Water Outdoors</h3>
+        <p>A quarter to three-quarters of all residential water use in the US is outdoors. A few simple steps can help you reduce your outdoor water use and waste less.</p>
+    </div>
+        <div class="element">
+        <i class="fas fa-water fa-4x"></i>
+        <h3>Save Energy, Save Water</h3>
+        <p>It takes water to make electricity and transportation fuels and it takes energy to move, heat and treat water, so saving energy saves water.</p>
+    </div>
+        <div class="element ">
+         <i class="fas fa-shopping-cart fa-4x"></i>
+        <h3>Change Buying Habits</h3>
+        <p>Everything you buy, use and throw away took water to process and transport. Use less by making thoughtful purchases and reusing and recycling more.</p>
+    </div>
+        <div class="element ">
+        <i class="fas fa-globe-americas fa-4x"></i>
+        <h3>Dive Deeper</h3>
+        <p>Explore educational materials on watercalculator.org, which is a source of all the information on this site, and an inspiration for it</p>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a target="_blank" href="http://facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+            <a target="_blank" href="http://twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+            <a target="_blank" href="http://youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+            <a target="_blank" href="http://linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2021 - Save Water</p>
+       
+    </footer>
+    <script>
+        const navbar = document.querySelector('.header');
+        window.onscroll = function () {
+            if(window.pageYOffset > 400) {
+                navbar.classList.remove('top');
+            } else {
+                navbar.classList.add('top');
+            }
+        }
+    </script>
+</body>
+</html>

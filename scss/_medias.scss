@@ -1,0 +1,168 @@
+@media screen and (min-width: 620px) {
+  .header {
+    justify-content: center;
+    a{
+      padding: 0 5rem;
+    }
+  }
+  #home {
+    .text {
+      font-size: 8.5em;
+      margin-bottom: 350px;
+    }
+  }
+  .liquid {
+    h2{
+      font-size: 19vw;
+  }
+  }
+  #info {
+    padding:4rem;
+    font-size: 1.6rem;
+  }
+  #info2{
+    .quote{
+      font-size: 2rem;
+      text-align: center;
+      padding:6rem 10rem;
+    }
+    p{
+      padding:6rem 5rem;
+
+    }
+  }
+  #orange,
+  #darkblue {
+    font-size: 1.7rem;
+  }
+  #colors{
+    .green,
+    .grey,
+    .blue {
+      width: 400px;
+        height: 400px;
+    }
+    #green,
+    #grey,
+    #blue{
+      font-size:3rem;
+      padding-top:3rem;
+      &::after {
+        height: 5px;
+      }
+    }
+    p{
+      font-size: 1.4rem;
+      margin-bottom: 5rem;
+    }
+  }
+  #tips{
+    font-size: 1.6rem;
+
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+ 
+}
+@media screen and (min-width: 960px){
+  .header {
+    a{
+      padding: 0 7rem;
+    }
+  }
+  #home {
+    .text {
+      font-size: 10em;
+      margin-bottom: 400px;
+    }
+  }
+  .liquid {
+    h2{
+      font-size: 17vw;
+  }
+  }
+
+  #colors{
+    .green,
+    .grey,
+    .blue {
+      width: 450px;
+        height: 450px;
+    }
+  }
+  #tips2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     
+  }
+  .footer {
+    padding: 1.2rem 5rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .liquid {
+    h2{
+      font-size: 10vw;
+   }
+  }
+  #info {
+    font-size: 2rem;
+  }
+  #info2{
+    p{
+      font-size: 2.5rem;
+    }
+   .quote {
+    font-size: 2rem;
+    padding:10rem 1rem;
+   }
+    .footprint-image {
+        height: 70vh;
+    }
+    .footprint-image2 {
+        height: 80vh;
+    }
+
+  }
+  .gridthis{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .size{
+    font-size: 3rem;
+  }
+  
+  #tips {
+    font-size: 2rem;
+    .tips-image {
+
+      height: 65vh;  
+  }
+  }
+  #tips2 {
+    grid-template-columns: repeat(3,1fr);  
+  }
+}
+@media screen and (min-width: 1500px){
+  #colors{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    .green,
+    .grey,
+    .blue {
+      width: 400px;
+        height: 400px;
+    }
+    .blue{
+      grid-column: 2/span 1;
+    }
+  }
+}
